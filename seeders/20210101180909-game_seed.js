@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -33,10 +33,11 @@ module.exports = {
       active: true,
       createdAt: new Date(),
       updatedAt: new Date()
-    }], {})
+    }
+    ], {});
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Games', null, {})
+    return queryInterface.bulkDelete('Games', null, {});
   }
-}
+};
